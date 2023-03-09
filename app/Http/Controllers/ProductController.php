@@ -30,7 +30,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-       
+        
         Product::create([
             "slug" => $request->slug,
             "name" =>$request->name,
