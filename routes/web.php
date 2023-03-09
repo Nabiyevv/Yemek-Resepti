@@ -31,7 +31,6 @@ Route::middleware('auth')->group(function () {
 
 
 
-
     Route::prefix('/admin')->group(function(){
         Route::get('/ingr/create',[IngredientController::class,'create']);
         Route::get('/product/create',[ProductController::class,'create']);
